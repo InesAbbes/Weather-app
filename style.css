@@ -1,0 +1,136 @@
+html {
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    background: lightpink;
+}
+h1 {
+    margin-top: 50px;
+    margin-bottom: -10px;
+    color: black;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px lightskyblue;
+
+
+}
+input {
+    padding: 0.5em;
+    width: 30%;
+    font-size: 2.5rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-block-color: lightgreen;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}
+
+.container-opacity {
+    justify-items: center;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.container {
+    justify-items: center;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.container .weatherCards {
+    display: none;
+    margin: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.container .weatherCards .day {
+    width: 300px;
+    height: 70%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+    margin: 1em;
+}
+.container .weatherCards .day .cardContainer {
+    width: 250px;
+    height: 350px;
+    padding: 1em;
+    align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+.container .weatherCards .day .cardContainer .city {
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.container .weatherCards .day .cardContainer .time {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.container .weatherCards .day .cardContainer .icon {
+    font-size: 100px;
+    line-break: 60px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.container .weatherCards .day .cardContainer .description {
+    font-size: 24px;
+}
+
+.container .weatherCards .day .cardContainer .tempContainer {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container .weatherCards .day .cardContainer .tempContainer .temp {
+    font-size: 100px;
+}
+
+.container .weatherCards .day .cardContainer .tempContainer .tempDeviation {
+
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 70px;
+}
+
+.container .weatherCards .day .cardContainer .tempContainer .tempDeviation .tempMin,
+.container .weatherCards .day .cardContainer .tempContainer .tempDeviation .tempMax {
+    font-size: 24px;
+}
+
+.container .weatherCards .day .cardContainer .bottom {
+    display: flex;
+}
+
+.container .weatherCards .day .cardContainer .bottom .humidity,
+.container .weatherCards .day .cardContainer .bottom .wind,
+.container .weatherCards .day .cardContainer .bottom .cloud {
+    font-size: 24px;
+    margin: 10px;
+}
